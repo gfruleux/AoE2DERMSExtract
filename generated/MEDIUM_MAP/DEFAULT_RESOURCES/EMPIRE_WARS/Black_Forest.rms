@@ -1,0 +1,673 @@
+create_object TOWN_CENTER
+{
+set_place_for_every_player
+group_placement_radius     18
+min_distance_to_players    0
+max_distance_to_players    0
+actor_area 100
+actor_area_radius 2
+}
+
+create_object SCOUT
+{
+number_of_objects             1
+set_place_for_every_player
+min_distance_to_players       12
+max_distance_to_players       16
+avoid_forest_zone 1
+}
+
+create_object RELIC
+{
+number_of_objects            5
+temp_min_distance_group_placement 38
+min_distance_to_players     35
+avoid_forest_zone 2
+avoid_cliff_zone 3
+}
+
+create_object RELIC
+{
+number_of_objects            1
+temp_min_distance_group_placement 4
+min_distance_to_players     40
+}
+
+create_object KERICEK
+{
+number_of_objects          6
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    9
+max_distance_to_players    13
+actor_area 14
+actor_area_radius 2
+avoid_forest_zone 4
+avoid_cliff_zone 2
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       3
+max_distance_to_players       3
+actor_area 21
+actor_area_radius 0
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       3
+max_distance_to_players       3
+actor_area 22
+actor_area_radius 0
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       3
+max_distance_to_players       3
+actor_area 23
+actor_area_radius 0
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       3
+max_distance_to_players       3
+actor_area 24
+actor_area_radius 0
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       3
+max_distance_to_players       3
+actor_area 25
+actor_area_radius 0
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       4
+max_distance_to_players       4
+actor_area 26
+actor_area_radius 0
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       4
+max_distance_to_players       6
+actor_area 27
+actor_area_radius 0
+find_closest
+second_object VILLAGER
+}
+
+create_object FARM
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       4
+max_distance_to_players       6
+actor_area 28
+actor_area_radius 0
+find_closest
+second_object VILLAGER
+}
+
+create_object MILL
+{
+set_place_for_every_player
+number_of_objects 1
+actor_area_to_place_in 14
+find_closest
+actor_area 40
+actor_area_radius 6
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+number_of_objects 5
+actor_area_to_place_in 14
+actor_area 94
+actor_area_radius 6
+force_placement
+find_closest
+}
+
+create_object GOLD
+{
+number_of_objects          7
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    9
+max_distance_to_players    14
+max_distance_to_other_zones  7
+avoid_forest_zone 3
+avoid_cliff_zone 2
+actor_area 12
+actor_area_radius 1
+avoid_actor_area 40
+avoid_actor_area 94
+}
+
+create_object MINING_CAMP
+{
+set_place_for_every_player
+number_of_objects 1
+find_closest
+actor_area_to_place_in 12
+actor_area 10
+actor_area_radius 2
+avoid_forest_zone 1
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+number_of_objects 4
+actor_area_to_place_in 12
+actor_area 171
+actor_area_radius 5
+find_closest
+force_placement
+}
+
+create_object LUMBER_CAMP
+{
+set_place_for_every_player
+number_of_objects 1
+max_distance_to_players       67
+place_on_forest_zone 0
+find_closest
+actor_area 8
+actor_area_radius 4
+avoid_actor_area 94
+avoid_actor_area 40
+avoid_actor_area 171
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+number_of_objects 4
+actor_area_to_place_in 8
+place_on_forest_zone 0
+actor_area 71
+actor_area_radius 4
+find_closest
+force_placement
+}
+
+create_object LUMBER_CAMP
+{
+set_place_for_every_player
+number_of_objects 1
+max_distance_to_players       67
+place_on_forest_zone 0
+find_closest
+actor_area 9
+actor_area_radius 4
+avoid_actor_area 71
+avoid_actor_area 94
+avoid_actor_area 40
+avoid_actor_area 171
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+number_of_objects 3
+actor_area_to_place_in 9
+place_on_forest_zone 0
+actor_area 72
+actor_area_radius 4
+find_closest
+force_placement
+}
+
+create_object LUMBER_CAMP
+{
+set_place_for_every_player
+number_of_objects 1
+max_distance_to_players       67
+place_on_forest_zone 0
+avoid_actor_area 71
+avoid_actor_area 72
+avoid_actor_area 94
+avoid_actor_area 40
+find_closest
+actor_area 99
+actor_area_radius 4
+avoid_actor_area 171
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+number_of_objects 3
+actor_area_to_place_in 99
+place_on_forest_zone 0
+actor_area 73
+actor_area_radius 5
+find_closest
+force_placement
+}
+
+create_object BLACKSMITH
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       11
+avoid_actor_area 94
+avoid_actor_area 40
+avoid_actor_area 8
+avoid_actor_area 9
+avoid_actor_area 99
+avoid_actor_area 171 /* primary gold villagers, large radius */
+actor_area 80
+actor_area_radius 2
+}
+
+create_object HOUSE
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       14
+avoid_actor_area 40
+avoid_actor_area 10
+avoid_actor_area 94
+avoid_actor_area 171
+find_closest
+}
+
+create_object HOUSE
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       14
+avoid_actor_area 40
+avoid_actor_area 10
+avoid_actor_area 94
+avoid_actor_area 171
+find_closest
+}
+
+create_object HOUSE
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       14
+avoid_actor_area 40
+avoid_actor_area 10
+avoid_actor_area 94
+avoid_actor_area 171
+find_closest
+}
+
+create_object HOUSE
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       14
+avoid_actor_area 40
+avoid_actor_area 10
+avoid_actor_area 94
+avoid_actor_area 171
+find_closest
+}
+
+create_object HOUSE
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       14
+avoid_actor_area 40
+avoid_actor_area 10
+avoid_actor_area 94
+avoid_actor_area 171
+find_closest
+}
+
+create_object HOUSE
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       14
+avoid_actor_area 40
+avoid_actor_area 10
+avoid_actor_area 94
+avoid_actor_area 171
+find_closest
+}
+
+create_object BARRACKS
+{
+set_place_for_every_player
+number_of_objects 1
+min_distance_to_players       7
+max_distance_to_players       9
+avoid_actor_area 94
+avoid_actor_area 40
+avoid_actor_area 8
+avoid_actor_area 9
+avoid_actor_area 99
+avoid_actor_area 171 /* primary gold villagers, large radius */
+actor_area 51
+actor_area_radius 2
+}
+
+create_object GOLD
+{
+number_of_objects          4
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    12
+max_distance_to_players    17
+max_distance_to_other_zones  7
+avoid_forest_zone 2	/* originally only 1 */
+avoid_cliff_zone 2
+actor_area 61
+actor_area_radius 5
+avoid_actor_area 171
+avoid_actor_area 40
+avoid_actor_area 94
+avoid_actor_area 8
+avoid_actor_area 9
+avoid_actor_area 99
+avoid_actor_area 80 /* blacksmith */
+avoid_actor_area 51 /* barracks */
+}
+
+create_object GOLD
+{
+number_of_objects	     4
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    15
+max_distance_to_players    20
+min_distance_group_placement  3
+max_distance_to_other_zones  7
+avoid_forest_zone 2	/* originally only 1 */
+avoid_cliff_zone 2
+actor_area 62
+actor_area_radius 5
+avoid_actor_area 171
+avoid_actor_area 40
+avoid_actor_area 94
+avoid_actor_area 8
+avoid_actor_area 9
+avoid_actor_area 99
+avoid_actor_area 80 /* blacksmith */
+avoid_actor_area 51 /* barracks */
+avoid_actor_area 61
+}
+
+create_object STONE
+{
+number_of_objects          5
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    11
+max_distance_to_players    17
+min_distance_group_placement  3
+max_distance_to_other_zones  7
+avoid_forest_zone 2	/* originally only 1 */
+avoid_cliff_zone 2
+actor_area 63
+actor_area_radius 5
+avoid_actor_area 171
+avoid_actor_area 40
+avoid_actor_area 94
+avoid_actor_area 8
+avoid_actor_area 9
+avoid_actor_area 99
+avoid_actor_area 80 /* blacksmith */
+avoid_actor_area 51 /* barracks */
+avoid_actor_area 61
+avoid_actor_area 62
+}
+
+create_object STONE
+{
+number_of_objects          4
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    18
+max_distance_to_players    23
+min_distance_group_placement  3
+max_distance_to_other_zones  7
+avoid_forest_zone 2	/* originally only 1 */
+avoid_cliff_zone 2
+actor_area 65
+actor_area_radius 5
+avoid_actor_area 171
+avoid_actor_area 40
+avoid_actor_area 94
+avoid_actor_area 8
+avoid_actor_area 9
+avoid_actor_area 99
+avoid_actor_area 80 /* blacksmith */
+avoid_actor_area 51 /* barracks */
+avoid_actor_area 61
+avoid_actor_area 62
+avoid_actor_area 63
+}
+
+create_object HERDABLE_A
+{
+number_of_objects 1
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+actor_area_to_place_in 100
+find_closest
+avoid_forest_zone 2
+avoid_cliff_zone 2
+avoid_actor_area 12
+avoid_actor_area 14
+}
+
+create_object HERDABLE_B
+{
+number_of_objects 2
+number_of_groups 2
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+start_random
+percent_chance 50
+min_distance_to_players    14
+max_distance_to_players    17
+percent_chance 50
+min_distance_to_players    18
+max_distance_to_players    21
+end_random
+avoid_forest_zone 2
+avoid_actor_area 12
+avoid_actor_area 14
+}
+
+create_object HUNTABLE
+{
+start_random
+percent_chance 50
+number_of_objects          4
+percent_chance 50
+number_of_objects          3
+end_random
+number_of_groups 	     1
+group_placement_radius     3
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+start_random
+percent_chance 50
+min_distance_to_players    14
+max_distance_to_players    17
+percent_chance 50
+min_distance_to_players    17
+max_distance_to_players    21
+end_random
+avoid_forest_zone 2
+avoid_actor_area 12
+avoid_actor_area 14
+}
+
+create_object PREDATOR_A
+{
+number_of_objects          2
+set_gaia_object_only
+set_place_for_every_player
+min_distance_group_placement 12
+start_random
+percent_chance 33
+min_distance_to_players    30
+max_distance_to_players    33
+percent_chance 33
+min_distance_to_players    34
+max_distance_to_players    37
+percent_chance 34
+min_distance_to_players    37
+max_distance_to_players    40
+end_random
+avoid_forest_zone 1
+}
+
+create_object GOLD
+{
+number_of_objects          3
+number_of_groups           3
+temp_min_distance_group_placement  30
+group_placement_radius     2
+set_tight_grouping
+set_gaia_object_only
+min_distance_to_players	   40
+avoid_forest_zone 3
+avoid_cliff_zone 4
+actor_area 66
+actor_area_radius 5
+}
+
+create_object STONE
+{
+number_of_objects          3	/* changed from 2 groups of 4 */
+number_of_groups           3
+temp_min_distance_group_placement  30
+group_placement_radius     2
+set_tight_grouping
+set_gaia_object_only
+min_distance_to_players	   40
+avoid_forest_zone 3
+avoid_cliff_zone 4
+actor_area 67
+actor_area_radius 5
+}
+
+create_object BIRDS_A
+{
+number_of_objects         2
+set_scaling_to_map_size
+}
+
+create_object BIRDS_B
+{
+number_of_objects         2
+set_scaling_to_map_size
+}
+
+create_object MELKARYBA
+{
+number_of_objects                   9999
+set_gaia_object_only
+temp_min_distance_group_placement  6
+}
+
+create_object LURABLE_B
+{
+number_of_objects 3
+number_of_groups 1
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    35
+max_distance_to_players    60
+temp_min_distance_group_placement  5
+}
+
+create_object PREDATOR_A
+{
+number_of_groups          3
+set_loose_grouping
+start_random
+percent_chance 75
+number_of_objects 1
+percent_chance 25
+number_of_objects 2
+end_random
+set_scaling_to_map_size
+set_gaia_object_only
+temp_min_distance_group_placement 12
+min_distance_to_players    40
+max_distance_to_players    120
+}
+
+create_object STRAGGLER
+{
+number_of_objects          50
+set_gaia_object_only
+set_scaling_to_map_size
+min_distance_to_players    35
+min_distance_group_placement  2
+avoid_actor_area 12
+avoid_actor_area 14
+avoid_actor_area 149
+avoid_actor_area 61
+avoid_actor_area 62
+avoid_actor_area 63
+avoid_actor_area 65
+avoid_actor_area 66
+avoid_actor_area 67
+}
+
