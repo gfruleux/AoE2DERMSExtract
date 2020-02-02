@@ -9,7 +9,7 @@ The repository contains extracted information from `GeneratingObjects.inc` file,
 Then you can navigate to `generated/TINY_MAP/OTHER_RESOURCES/REGICIDE/` and open `Arena.rms` !
 
 
-Because GeneratingObjects.inc doesn't use all the constants of the game _(like DEFAULT_RESOURCES)_, if you don't find a constant, then use the `OTHER_` folder as it will be what the game use _(like `OTHER_RESOURCES` in the example above)_
+Because GeneratingObjects.inc doesn't use all the constants of the game _(like DEFAULT_RESOURCES)_, if you don't find a constant, then use the `OTHER_` folder as it will act as the `else` statement _(like `OTHER_RESOURCES` in the example above)_
 
 
 
