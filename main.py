@@ -29,17 +29,11 @@ def update_path_and_dir(path_left, path_right):
 
 
 def get_reduced_map():
-    map_size_idx = const.MAP_SIZE_IDX
+    map_size_idx = const.MAP_SIZE_DICT.keys()
 
-    map_res_idx = const.MAP_RESOURCES_IDX
+    map_res_idx = const.MAP_RESOURCES_DICT.keys()
 
-    game_type_idx = [
-        "RANDOM_GAME",
-        "KING_OT_HILL",
-        "EMPIRE_WARS",
-        "BATTLE_ROYALE",
-        "REGICIDE",
-        "DEATH_MATCH"]
+    game_type_idx = const.GAME_TYPE_DICT.keys()
 
     return map_size_idx, map_res_idx, game_type_idx
 
