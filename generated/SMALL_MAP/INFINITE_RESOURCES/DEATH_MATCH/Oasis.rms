@@ -1,0 +1,80 @@
+/* SMALL_MAP INFINITE_RESOURCES DEATH_MATCH */
+
+create_object TOWN_CENTER
+{
+set_place_for_every_player
+group_placement_radius     18
+min_distance_to_players    0
+max_distance_to_players    0
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+min_distance_to_players       6
+max_distance_to_players       6
+}
+
+create_object SCOUT
+{
+number_of_objects             1
+set_place_for_every_player
+min_distance_to_players       7
+max_distance_to_players       9
+avoid_forest_zone 1
+}
+
+create_object GOLD
+{
+number_of_objects          7
+group_placement_radius     3
+min_distance_group_placement 2
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    12
+max_distance_to_players    17
+max_distance_to_other_zones  7
+avoid_forest_zone 2 /* originally 1 */
+avoid_cliff_zone 2
+actor_area 12
+actor_area_radius 5
+avoid_actor_area 14
+}
+
+create_object GOLD
+{
+number_of_objects          3
+number_of_groups           2
+temp_min_distance_group_placement  30
+group_placement_radius     2
+set_tight_grouping
+set_gaia_object_only
+min_distance_to_players	   40
+avoid_forest_zone 3
+avoid_cliff_zone 4
+actor_area 66
+actor_area_radius 5
+}
+
+create_object STONE
+{
+number_of_objects          4
+number_of_groups           999
+temp_min_distance_group_placement  44
+group_placement_radius     2
+set_tight_grouping
+set_gaia_object_only
+min_distance_to_players	   40
+avoid_forest_zone 3
+avoid_cliff_zone 4
+actor_area 67
+actor_area_radius 5
+}
+
+create_object BIRDS_A
+{
+number_of_objects         4
+set_scaling_to_map_size
+}
+

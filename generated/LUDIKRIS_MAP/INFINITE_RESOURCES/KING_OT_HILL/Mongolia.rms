@@ -1,0 +1,243 @@
+/* LUDIKRIS_MAP INFINITE_RESOURCES KING_OT_HILL */
+
+create_object TOWN_CENTER
+{
+set_place_for_every_player
+group_placement_radius     18
+min_distance_to_players    0
+max_distance_to_players    0
+}
+
+create_object MONUMENT_RESOURCES
+{
+number_of_objects			1
+set_place_for_every_player
+min_distance_to_players			0
+max_distance_to_players			0
+}
+
+create_object VILLAGER
+{
+set_place_for_every_player
+min_distance_to_players       6
+max_distance_to_players       6
+}
+
+create_object SCOUT
+{
+number_of_objects             1
+set_place_for_every_player
+min_distance_to_players       7
+max_distance_to_players       9
+avoid_forest_zone 1
+}
+
+create_object KERICEK
+{
+number_of_objects          6
+group_placement_radius     3
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    9
+max_distance_to_players    13
+actor_area 14
+actor_area_radius 4	/* originally 6 */
+min_distance_group_placement 2
+avoid_forest_zone 4
+avoid_cliff_zone 2
+}
+
+create_object GOLD
+{
+number_of_objects          7
+group_placement_radius     3
+min_distance_group_placement 2
+set_tight_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    12
+max_distance_to_players    17
+max_distance_to_other_zones  7
+avoid_forest_zone 2 /* originally 1 */
+avoid_cliff_zone 2
+actor_area 12
+actor_area_radius 5
+avoid_actor_area 14
+}
+
+create_object HERDABLE_A
+{
+number_of_objects 4
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    7
+max_distance_to_players    8	/* originally 8-9 */
+avoid_forest_zone 2
+avoid_cliff_zone 2
+}
+
+create_object HERDABLE_B
+{
+number_of_objects 2
+number_of_groups 2
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+start_random
+percent_chance 20
+min_distance_to_players    14
+max_distance_to_players    17
+percent_chance 20
+min_distance_to_players    18
+max_distance_to_players    21
+percent_chance 20
+min_distance_to_players    20
+max_distance_to_players    23
+percent_chance 20
+min_distance_to_players    24
+max_distance_to_players    27
+percent_chance 20
+min_distance_to_players    27
+max_distance_to_players    30
+end_random
+avoid_forest_zone 2
+}
+
+create_object HUNTABLE
+{
+start_random
+percent_chance 50
+number_of_objects          4
+percent_chance 50
+number_of_objects          3
+end_random
+number_of_groups 	     1
+group_placement_radius     3
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+start_random
+percent_chance 20
+min_distance_to_players    14
+max_distance_to_players    17
+percent_chance 20
+min_distance_to_players    18
+max_distance_to_players    21
+percent_chance 20
+min_distance_to_players    21
+max_distance_to_players    24
+percent_chance 20
+min_distance_to_players    24
+max_distance_to_players    27
+percent_chance 20
+min_distance_to_players    27
+max_distance_to_players    30
+end_random
+avoid_forest_zone 2
+}
+
+create_object LURABLE_A
+{
+number_of_objects          1
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    16
+max_distance_to_players    19
+avoid_forest_zone 2
+}
+
+create_object LURABLE_B
+{
+number_of_objects          1
+set_loose_grouping
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players    16
+max_distance_to_players    19
+avoid_forest_zone 2
+}
+
+create_object GOLD
+{
+number_of_objects          4
+number_of_groups           26
+temp_min_distance_group_placement  44
+group_placement_radius     2
+set_tight_grouping
+set_gaia_object_only
+min_distance_to_players	   40
+avoid_forest_zone 3
+avoid_cliff_zone 4
+actor_area 66
+actor_area_radius 5
+}
+
+create_object STONE
+{
+number_of_objects          4
+number_of_groups           999
+temp_min_distance_group_placement  44
+group_placement_radius     2
+set_tight_grouping
+set_gaia_object_only
+min_distance_to_players	   40
+avoid_forest_zone 3
+avoid_cliff_zone 4
+actor_area 67
+actor_area_radius 5
+}
+
+create_object STRAGGLER
+{
+number_of_objects             2
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players       4
+max_distance_to_players       5
+min_distance_group_placement  2
+avoid_actor_area 14
+}
+
+create_object STRAGGLER
+{
+number_of_objects             3
+set_gaia_object_only
+set_place_for_every_player
+min_distance_to_players       6
+max_distance_to_players       8
+min_distance_group_placement  2
+avoid_actor_area 14
+}
+
+create_object BIRDS_A
+{
+number_of_objects         2
+set_scaling_to_map_size
+}
+
+create_object BIRDS_B
+{
+number_of_objects         2
+set_scaling_to_map_size
+}
+
+create_object STRAGGLER
+{
+number_of_objects          30
+set_gaia_object_only
+set_scaling_to_map_size
+min_distance_to_players    8
+avoid_actor_area 12
+avoid_actor_area 14
+avoid_actor_area 149
+avoid_actor_area 61
+avoid_actor_area 62
+avoid_actor_area 63
+avoid_actor_area 65
+avoid_actor_area 66
+avoid_actor_area 67
+}
+

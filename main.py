@@ -55,7 +55,7 @@ def main():
                 _path_m_r = update_path_and_dir(_path_m_s, map_res)
                 for game_type in _game_type:
                     _path_g_t = update_path_and_dir(_path_m_r, game_type)
-                    parser = GeneratingObjectsParser(path_gen_obj, path_rms, map_size, map_res, game_type)
+                    parser = GeneratingObjectsParser(path_gen_obj, path_rms, map_size, map_res, game_type, True)
                     parser.run_parsers()
                     path_out = os.path.join(_path_g_t, get_file_name(path_rms))
                     print("Writing " + path_out)

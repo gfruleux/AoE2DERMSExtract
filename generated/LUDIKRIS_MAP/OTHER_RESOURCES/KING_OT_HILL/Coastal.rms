@@ -1,0 +1,10 @@
+/* LUDIKRIS_MAP OTHER_RESOURCES KING_OT_HILL */
+
+create_object MONUMENT_RESOURCES
+{
+number_of_objects			1
+set_place_for_every_player
+min_distance_to_players			0
+max_distance_to_players			0
+}
+
