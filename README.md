@@ -1,23 +1,13 @@
 ### Age Of Empires 2 : Definitive Edition Random Map Script Extract
 
 
-Lets you extract useful information from parsed RMS files.
+
+The repository contains extracted information from `GeneratingObjects.inc` file, using constants from it. The generated
+ files can be found under `generated/<map size>/<map resources>/<game type>/<map name>.rms`
+ 
+ 
+ If you ever wonder, for example,_"how objects are generated when I play Arena on Tiny map, on regicide ?"_ 
+Then you can navigate to `generated/TINY_MAP/OTHER_RESOURCES/REGICIDE/` and open `Arena.rms` !
 
 
-Possibilities:
-* Walls
-* Scouts
-* Relics
-* Golds
-* Stones
-* Herdable (such as sheeps)
-* Lurables (such as boars)
-* Huntable (such as deers)
-
-
-Each will have (if available) the following attributes:
-* number of objects
-* number of groups
-* min distance to players
-* max distance to players
-* set place for every player
+Because GeneratingObjects.inc doesn't use all the constants of the game _(like DEFAULT_RESOURCES)_, if you don't find a constant, then use the `OTHER_` folder as it will be what the game use _(like `OTHER_RESOURCES` in the example above)_
