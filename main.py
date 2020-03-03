@@ -42,7 +42,12 @@ def main():
     path_gen_obj = filedialog.askopenfilename(**FILE_OPTION_GEN)
     path_rms_list = filedialog.askopenfilename(**FILE_OPTION_RMS)
 
-    _path = "generated"
+    update_file = open("update", "r")
+    update_version = update_file.read()
+    update_file.close()
+
+    _path = "generated-update-" + update_version
+
     if not os.path.exists(_path):
         os.makedirs(_path)
 
